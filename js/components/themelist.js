@@ -2,7 +2,7 @@ const themeList = () => {
     const container = $('<div class="container"></div>');
     
     jQuery.each(state.data, (i,val)  => {
-        container.append('<div></div>');  
+        container.append('<div class="answer"></div>');  
         container.children().eq(i).append(`<p>${val.content}</p>`); 
         container.children().eq(i).append(`<p>- Por: ${val.author_name}</p>`);
 
